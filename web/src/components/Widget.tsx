@@ -1,20 +1,27 @@
-import { ChatTeardropDots} from 'phosphor-react'
+import { ChatTeardropDots } from "phosphor-react";
 
 export function Widget() {
   return (
-    <div>
-      <button className="bg-brand-500
+    <div className="absolute bottom-4 right-5">
+      <button
+        className=" 
+                          flex
+                        bg-brand-500
                           rounded-full
                           px-3
                           h-12
                           text-white 
+                          items-center
+                          group                          
+                          "
+      >
+        <ChatTeardropDots className="w-6 h-6" />
 
-                          ">
-                            <ChatTeardropDots
-               className="w-6 h-6
-                          
-               "
-      /></button>
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-5">
+          <span className="pl-2"></span>
+          Feedback
+        </span>
+      </button>
     </div>
-  )
+  );
 }
