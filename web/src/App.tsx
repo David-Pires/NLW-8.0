@@ -1,13 +1,16 @@
 
-function Button() {
-  return <button type="submit">I'm a button</button>
+function Button(props) {
+  console.log(props.text)
+  return <button>I'm a button</button>
+  
 }
 
 function App() {
   return (
     <div>
       <h1>Hello World</h1>
-      <Button/>
+      <Button text="enviar"/>
+      <Button text="mais um"/>
     </div>
   )
 }
