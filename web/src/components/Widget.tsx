@@ -14,7 +14,8 @@ export function Widget() {
                           h-12
                           text-white 
                           items-center
-                          group                          
+                          group  
+                          text-4xl                        
                           "
       >
         <ChatTeardropDots className="w-6 h-6" />
